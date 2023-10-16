@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-class PostmanEchoTest {
+class PostmanTest {
     @Test
     void shouldReturnSendData() {
 
@@ -18,7 +18,7 @@ class PostmanEchoTest {
 
                 .then()
                 .statusCode(200)
-                .body("data" , equalTo("OK"))
+                .body("data" , equalTo("NO"))
         ;
 
     }
